@@ -1,0 +1,13 @@
+*.nav
+*.out
+*.aux
+*.dvi
+*.snm
+*.toc
+*.bbl
+*.log
+*.tex.bak
+*.blg
+*.synctex.gz
+*.tex.sav
+texSlides[handout].*
