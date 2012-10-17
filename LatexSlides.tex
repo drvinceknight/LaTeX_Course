@@ -15,6 +15,8 @@
 \usepackage{hyperref}
 \usepackage{lscape}
 \usepackage{verbatim}
+\usenavigationsymbolstemplate{}
+\setbeamertemplate{footline}[frame number]
 
 
 
@@ -157,7 +159,7 @@ a-z\;\;\;\;\;\;A-Z\;\;\;\;\;\;0-9
 \item Finally there are 13 special keys that are used in \LaTeX\; commands:
 \begin{center}
 \begin{verbatim}
-             # $ % & ~ _ ^ \ { } @ " | 
+             # $ % & ~ _ ^ \ { } @ " |
 \end{verbatim}
 \end{center}
 \end{itemize}
@@ -168,7 +170,7 @@ a-z\;\;\;\;\;\;A-Z\;\;\;\;\;\;0-9
 \frame[containsverbatim]{\frametitle{Example}
 Now attempt to add the following text:\vspace{.5cm}
 
-\blue 
+\blue
 I can write normal text.
 \begin{center}
 I can centre text.
@@ -291,8 +293,8 @@ Add the following abstract to your cheatsheet:\\
 \begin{verbatim}
 \begin{abstract}
 
-This document will be useful to me as a 
-\textbf{reference} document from which 
+This document will be useful to me as a
+\textbf{reference} document from which
 I can start all my future \LaTeX\ files.
 
 \end{abstract}
@@ -379,8 +381,8 @@ It is very simple in \LaTeX\ to control your page formatting. Experiment with th
 \begin{verbatim}
 
 \setlength{\textheight}{240mm}
-\setlength{\textwidth}{166mm} 
-\setlength{\topmargin}{0mm} 
+\setlength{\textwidth}{166mm}
+\setlength{\topmargin}{0mm}
 \setlength{\oddsidemargin}{0mm}
 
 \end{verbatim}
@@ -419,7 +421,7 @@ There are various ways to have lists in \Latex\:
 \item This
 \end{itemize}
 
-or 
+or
 
 \begin{enumerate}
 \item Like
@@ -500,7 +502,7 @@ Create a new file in texworks and write the following code:
 @book{Gratzer2007,
 author = {Gr\"{a}tzer, George},
 publisher = {Springer},
-title = {{More Math Into LaTeX: A Guide for 
+title = {{More Math Into LaTeX: A Guide for
 	          Documentation and Presentation}},
 year = {2007}
 }
@@ -539,11 +541,11 @@ Documents can be further fragmented using the sections command:
 Include a label to your first section (\verb'\label{General_Typesetting}') and add the following code to your cheat sheet:
 \begin{verbatim}
 \section{Typesetting Mathematics}
-In Section \ref{General_Typesetting} we saw how to type 
+In Section \ref{General_Typesetting} we saw how to type
 general text. We will now type mathematics.
 \end{verbatim}
 Finally include a table of contents by using:
- \verb'\tableofcontents' 
+ \verb'\tableofcontents'
 }
 
 
@@ -608,24 +610,24 @@ Typesetting mathematics is \LaTeX's strength. We will concentrate on the buildin
 }
 
 \frame[containsverbatim]{\frametitle{Math in text}
-Math in text (\emph{inline}) is enclosed by \verb'$' symbols (or by \verb'\(' and \verb'\)'). Add the following code to your cheatsheet: 
+Math in text (\emph{inline}) is enclosed by \verb'$' symbols (or by \verb'\(' and \verb'\)'). Add the following code to your cheatsheet:
 \begin{verbatim}
-Mathematics can be typed in to \LaTeX\ as $x^2$ 
+Mathematics can be typed in to \LaTeX\ as $x^2$
 and/or \((a+b)^2=a^2+2ab+b^2\).
 \end{verbatim}
 
 }
 
 \frame[containsverbatim]{\frametitle{Math in text}
-\blue Mathematics can be typed in to \LaTeX\ as $x^2$ 
+\blue Mathematics can be typed in to \LaTeX\ as $x^2$
 and/or \((a+b)^2=a^2+2ab+b^2\).
 
 }
 
 \frame[containsverbatim]{\frametitle{Displayed Mathematics}
-Math in display mode is enclosed by \verb'$$' symbols (or by \verb'\[' and \verb'])'). Add the following code to your cheatsheet: 
+Math in display mode is enclosed by \verb'$$' symbols (or by \verb'\[' and \verb'])'). Add the following code to your cheatsheet:
 \begin{verbatim}
-It is sometimes nicer to display more 
+It is sometimes nicer to display more
 complex formula like this:
 $$\sum_{i=1}^ni={n(n+1)\over 2}$$
 and
@@ -634,7 +636,7 @@ and
 }
 
 \frame[containsverbatim]{\frametitle{Displayed Mathematics}
-It is sometimes nicer to display more 
+It is sometimes nicer to display more
 complex formula like this:
 $$\sum_{i=1}^ni={n(n+1)\over 2}$$
 and
@@ -650,7 +652,7 @@ e=mc^2
 \end{equation}
 
 
-In equation (\ref{my_first_equation}) we 
+In equation (\ref{my_first_equation}) we
 have a very well known relationship!
 \end{verbatim}
 }
@@ -1052,4 +1054,4 @@ It is possible to handle big projects (such as a thesis) with the \verb'\include
 \item Google.com
 \end{itemize}
 }
-\end{document} 
+\end{document}
